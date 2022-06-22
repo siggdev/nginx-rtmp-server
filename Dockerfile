@@ -7,7 +7,7 @@ RUN addgroup www && \
 # Install nginx and nginx-mod-rtmp
 RUN apt update && \
     apt upgrade -y && \
-    apt install nginx libnginx-mod-rtmp
+    apt install nginx libnginx-mod-rtmp -y
 
 # make nginx config available in docker volume /config
 RUN mkdir /config && \
